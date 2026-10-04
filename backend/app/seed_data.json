@@ -1,0 +1,14 @@
+{
+  "_note": "SAMPLE DATA for the demo only. Replace cost, yield and price with figures verified by an agronomist, state agri-university guides and Agmarknet/MSP before any real use.",
+  "crops": [
+    {"name": "Soybean", "name_hi": "सोयाबीन", "seasons": ["kharif"], "states": ["Madhya Pradesh", "Maharashtra", "Rajasthan"], "water_sources": ["rainfed", "borewell", "canal"], "cost_per_acre": 12000, "yield_qtl_per_acre": 4, "price_per_qtl": 4600, "duration_days": 100, "risk": "low"},
+    {"name": "Maize", "name_hi": "मक्का", "seasons": ["kharif", "rabi", "zaid"], "states": ["ALL"], "water_sources": ["rainfed", "borewell", "canal"], "cost_per_acre": 15000, "yield_qtl_per_acre": 18, "price_per_qtl": 2200, "duration_days": 110, "risk": "medium"},
+    {"name": "Pigeon pea", "name_hi": "अरहर", "seasons": ["kharif"], "states": ["Maharashtra", "Karnataka", "Madhya Pradesh", "Uttar Pradesh"], "water_sources": ["rainfed", "borewell"], "cost_per_acre": 14000, "yield_qtl_per_acre": 4, "price_per_qtl": 7000, "duration_days": 170, "risk": "medium"},
+    {"name": "Paddy (rice)", "name_hi": "धान", "seasons": ["kharif"], "states": ["ALL"], "water_sources": ["rainfed", "borewell", "canal"], "cost_per_acre": 22000, "yield_qtl_per_acre": 20, "price_per_qtl": 2300, "duration_days": 130, "risk": "low"},
+    {"name": "Groundnut", "name_hi": "मूंगफली", "seasons": ["kharif", "zaid"], "states": ["Gujarat", "Rajasthan", "Tamil Nadu", "Andhra Pradesh"], "water_sources": ["rainfed", "borewell"], "cost_per_acre": 20000, "yield_qtl_per_acre": 7, "price_per_qtl": 6000, "duration_days": 110, "risk": "medium"},
+    {"name": "Cotton", "name_hi": "कपास", "seasons": ["kharif"], "states": ["Gujarat", "Maharashtra", "Telangana", "Punjab"], "water_sources": ["rainfed", "borewell", "canal"], "cost_per_acre": 28000, "yield_qtl_per_acre": 7, "price_per_qtl": 7000, "duration_days": 180, "risk": "high"},
+    {"name": "Wheat", "name_hi": "गेहूं", "seasons": ["rabi"], "states": ["Uttar Pradesh", "Punjab", "Haryana", "Madhya Pradesh", "Rajasthan", "Bihar"], "water_sources": ["borewell", "canal"], "cost_per_acre": 16000, "yield_qtl_per_acre": 18, "price_per_qtl": 2275, "duration_days": 125, "risk": "low"},
+    {"name": "Mustard", "name_hi": "सरसों", "seasons": ["rabi"], "states": ["Rajasthan", "Uttar Pradesh", "Haryana", "Madhya Pradesh"], "water_sources": ["rainfed", "borewell", "canal"], "cost_per_acre": 12000, "yield_qtl_per_acre": 6, "price_per_qtl": 5500, "duration_days": 120, "risk": "medium"},
+    {"name": "Chickpea (gram)", "name_hi": "चना", "seasons": ["rabi"], "states": ["Madhya Pradesh", "Rajasthan", "Maharashtra", "Uttar Pradesh"], "water_sources": ["rainfed", "borewell"], "cost_per_acre": 13000, "yield_qtl_per_acre": 6, "price_per_qtl": 5500, "duration_days": 110, "risk": "medium"}
+  ]
+}
