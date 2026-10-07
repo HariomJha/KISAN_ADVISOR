@@ -1,7 +1,7 @@
 # Kisan Advisor (pilot)
 
 Location-aware crop recommendations for Indian farmers.
-Next.js (TypeScript, PWA) · FastAPI · PostgreSQL · Docker · GitHub Actions CI.
+Next.js (TypeScript, PWA) · next-intl (11 languages) · Leaflet map · FastAPI · PostgreSQL · Docker · GitHub Actions CI.
 
 > Crop cost/yield/price values in `backend/app/seed_data.json` are SAMPLE data.
 > Replace with verified figures (agronomist, state agri-university, Agmarknet, MSP) before real use.
@@ -40,3 +40,18 @@ pytest -q && uvicorn app.main:app --reload
 ## Roadmap
 Bigha/regional units · district-level data · live weather (Open-Meteo) · mandi prices (Agmarknet)
 · expert call-back form · crop photo disease check · move to AWS EKS (Terraform/Jenkins).
+
+
+## Phase 1 notes
+- Pages: `/{locale}`, `/services`, `/services/best-crop`, `/about`, `/contact`. Root `/` redirects to a language.
+- Languages: hi, en, bn, mr, gu, kn, te, ta, or, ne, as, ml (12). Hindi and English are complete; the others are partial drafts
+  (navigation, key labels, crop names) that fall back to English. Get native speakers to review them.
+  See completeness: `python scripts/check_translations.py --list`.
+- Districts: the API ships sample districts only. Load the full official list:
+  1. Go to https://lgdirectory.gov.in/downloadDirectory.do, choose "All Districts of India" and download it as CSV.
+  2. Copy it to `backend/districts.csv`.
+  3. From `backend` with the venv active: `python -m app.import_districts districts.csv --replace`
+  4. For production, set `DATABASE_URL` to the database's external URL and run the same command.
+  Any CSV with state and district columns works. Unrecognised state names are listed so you can add aliases in `app/district_utils.py`.
+- New backend routes: `GET /states`, `GET /districts?state=`; `POST /recommend` also accepts `district`, `village`, `lat`, `lon`.
+- See `docs/ROADMAP.md` for the next phases.

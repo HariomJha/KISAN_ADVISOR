@@ -1,0 +1,22 @@
+{
+  "_note": "SAMPLE districts only (a few per state) so the dropdown works in the pilot. Load the full official list with: python -m app.import_districts districts.csv",
+  "districts": {
+    "Madhya Pradesh": ["Bhopal", "Indore", "Jabalpur", "Gwalior", "Ujjain"],
+    "Maharashtra": ["Pune", "Nagpur", "Nashik", "Kolhapur", "Nanded"],
+    "Uttar Pradesh": ["Lucknow", "Varanasi", "Agra", "Kanpur Nagar", "Meerut"],
+    "Punjab": ["Ludhiana", "Amritsar", "Patiala", "Bathinda"],
+    "Haryana": ["Karnal", "Hisar", "Rohtak", "Ambala"],
+    "Bihar": ["Patna", "Gaya", "Muzaffarpur", "Bhagalpur"],
+    "West Bengal": ["Nadia", "Hooghly", "Murshidabad", "Darjeeling"],
+    "Karnataka": ["Mysuru", "Belagavi", "Dharwad", "Tumakuru"],
+    "Tamil Nadu": ["Thanjavur", "Coimbatore", "Madurai", "Salem"],
+    "Telangana": ["Nizamabad", "Karimnagar", "Khammam", "Medak"],
+    "Andhra Pradesh": ["Guntur", "Krishna", "Kurnool", "Visakhapatnam"],
+    "Odisha": ["Cuttack", "Khordha", "Ganjam", "Sambalpur"],
+    "Kerala": ["Thrissur", "Palakkad", "Kottayam", "Wayanad"],
+    "Assam": ["Kamrup", "Nagaon", "Jorhat", "Dibrugarh"],
+    "Gujarat": ["Ahmedabad", "Rajkot", "Surat", "Junagadh"],
+    "Rajasthan": ["Jaipur", "Jodhpur", "Kota", "Alwar"],
+    "Sikkim": ["Gangtok", "Mangan", "Namchi", "Gyalshing"]
+  }
+}

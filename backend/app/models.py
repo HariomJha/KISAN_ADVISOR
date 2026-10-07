@@ -1,4 +1,4 @@
-from sqlalchemy import JSON, Float, Integer, String
+from sqlalchemy import JSON, Float, Integer, String, UniqueConstraint
 from sqlalchemy.orm import Mapped, mapped_column
 
 from .db import Base
@@ -21,3 +21,12 @@ class Crop(Base):
 
     def as_dict(self) -> dict:
         return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+
+
+class District(Base):
+    __tablename__ = "districts"
+    __table_args__ = (UniqueConstraint("state", "name"),)
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    state: Mapped[str] = mapped_column(String(80), index=True)
+    name: Mapped[str] = mapped_column(String(80))

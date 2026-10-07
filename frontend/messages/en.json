@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": "Kisan Advisor"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "home": {
+    "title": "Find the best crop for your field",
+    "subtitle": "Tell us where your field is and how big it is. We show which crops can earn you the most.",
+    "cta": "Get started"
+  },
+  "services": {
+    "title": "Our services",
+    "bestCrop": "Find the best crop for your field",
+    "seeds": "Buy seeds at low rates",
+    "pesticides": "Buy pesticides",
+    "sell": "Sell seeds / pesticides",
+    "equipment": "Agriculture equipment",
+    "soon": "Coming soon",
+    "open": "Open"
+  },
+  "crop": {
+    "title": "Best crop for your field",
+    "subtitle": "Fill in your field details",
+    "state": "State",
+    "district": "District",
+    "village": "Village / town (optional)",
+    "choose": "Select",
+    "useLocation": "Use my location",
+    "geoErr": "Could not get your location. Tap your field on the map instead.",
+    "mapHint": "Tap your field's place on the map",
+    "located": "Selected place",
+    "season": "Season",
+    "water": "Water source",
+    "area": "Field size",
+    "unit": "Unit",
+    "go": "See best crops",
+    "top": "Top crops for you",
+    "inv": "Investment",
+    "rev": "Revenue",
+    "profit": "Profit",
+    "days": "days",
+    "none": "No crops found for this selection.",
+    "err": "Could not reach the server. Please try again.",
+    "kharif": "Kharif",
+    "rabi": "Rabi",
+    "zaid": "Zaid",
+    "rainfed": "Rain-fed",
+    "borewell": "Borewell",
+    "canal": "Canal",
+    "acre": "Acre",
+    "hectare": "Hectare",
+    "low": "Low risk",
+    "medium": "Medium risk",
+    "high": "High risk"
+  },
+  "about": {
+    "title": "About us",
+    "body": "Kisan Advisor helps farmers choose crops using their location, season and water. This is a pilot project. Next we plan to add weather alerts, mandi prices, expert advice and plant disease help."
+  },
+  "contact": {
+    "title": "Contact us",
+    "body": "Questions or feedback? Write to us."
+  },
+  "footer": {
+    "note": "Estimates use sample data for a pilot. Confirm with a local agriculture expert before investing."
+  },
+  "crops": {
+    "soybean": "Soybean",
+    "maize": "Maize",
+    "pigeon_pea": "Pigeon pea",
+    "paddy_rice": "Paddy (rice)",
+    "groundnut": "Groundnut",
+    "cotton": "Cotton",
+    "wheat": "Wheat",
+    "mustard": "Mustard",
+    "chickpea_gram": "Chickpea (gram)"
+  }
+}
