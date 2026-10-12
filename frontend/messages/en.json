@@ -80,7 +80,9 @@
     "cotton": "Cotton",
     "wheat": "Wheat",
     "mustard": "Mustard",
-    "chickpea_gram": "Chickpea (gram)"
+    "chickpea_gram": "Chickpea (gram)",
+    "readAloud": "Read aloud",
+    "speak": "{name}. Investment {inv} rupees. Revenue {rev} rupees. Profit {profit} rupees."
   }
 }
 

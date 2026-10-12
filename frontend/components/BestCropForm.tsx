@@ -1,7 +1,8 @@
 "use client";
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
-import { useMessages, useTranslations } from "next-intl";
+import { useLocale, useMessages, useTranslations } from "next-intl";
+import ReadAloud from "./ReadAloud";
 
 const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
@@ -17,6 +18,7 @@ const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(
 export default function BestCropForm() {
   const t = useTranslations("crop");
   const tf = useTranslations("footer");
+  const locale = useLocale();
   const messages = useMessages() as { crops?: Record<string, string> };
 
   const [states, setStates] = useState<string[]>([]);
@@ -174,6 +176,13 @@ export default function BestCropForm() {
           </div>
         </div>
       ))}
+      {results && results.length > 0 && ["hi", "en"].includes(locale) && (
+        <ReadAloud 
+          locale={locale}
+          label={t("readAloud")}
+          text={results.map((r) => t("speak", { name: cropName(r.name), inv: r.investment, rev: r.revenue, profit: r.profit })).join(" ")}
+        />
+      )}
       {results && <div className="note">{tf("note")}</div>}
     </div>
   );

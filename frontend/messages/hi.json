@@ -80,6 +80,8 @@
     "cotton": "कपास",
     "wheat": "गेहूं",
     "mustard": "सरसों",
-    "chickpea_gram": "चना"
+    "chickpea_gram": "चना",
+    "readAloud": "सुनें",
+    "speak": "{name}। निवेश {inv} रुपये। आय {rev} रुपये। मुनाफ़ा {profit} रुपये।"
   }
 }
