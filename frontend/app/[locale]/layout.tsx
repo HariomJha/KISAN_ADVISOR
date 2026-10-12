@@ -9,6 +9,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import Header from "@/components/Header";
 import "../globals.css";
+import WhatsAppHelp from "@/components/WhatsAppHelp";
 
 // One font stack covers every script; the browser downloads only the scripts a page actually uses.
 // Assamese uses the Bengali script; Nepali uses Devanagari.
@@ -47,6 +48,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <Header />
           {children}
+          <WhatsAppHelp />
           <footer className="ftr">{tf("note")}</footer>
         </NextIntlClientProvider>
       </body>

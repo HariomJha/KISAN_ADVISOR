@@ -7,7 +7,8 @@
     "services": "Services",
     "about": "About",
     "contact": "Contact",
-    "language": "Language"
+    "language": "Language",
+    "help": "Help on WhatsApp"
   },
   "home": {
     "title": "Find the best crop for your field",
@@ -82,3 +83,4 @@
     "chickpea_gram": "Chickpea (gram)"
   }
 }
+

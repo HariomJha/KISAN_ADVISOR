@@ -41,6 +41,11 @@ export default function BestCropForm() {
       .then((r) => r.json()).then(setDistricts).catch(() => setDistricts([]));
   }, [f.state]);
 
+  useEffect(() => {
+    try { const s = localStorage.getItem("bestcrop"); if (s) setF(JSON.parse(s)); } catch {}
+  }, []);
+  try { localStorage.setItem("bestcrop", JSON.stringify(f)); } catch {}
+
   const change = (k: string) => (e: React.ChangeEvent<HTMLSelectElement | HTMLInputElement>) => {
     const v = e.target.value;
     setF((p) => ({ ...p, [k]: v, ...(k === "state" ? { district: "" } : {}) }));
@@ -93,7 +98,9 @@ export default function BestCropForm() {
           </select>
         </div>
         <div>
-          <label htmlFor="district">{t("district")}</label>
+
+
+          {/* <label htmlFor="district">{t("district")}</label>
           {districts.length ? (
             <select id="district" value={f.district} onChange={change("district")}>
               <option value="">{t("choose")}</option>
@@ -101,7 +108,17 @@ export default function BestCropForm() {
             </select>
           ) : (
             <input id="district" type="text" value={f.district} onChange={change("district")} />
-          )}
+          )} */}
+
+
+          <label htmlFor="district">{t("district")}</label>
+          <input id="district" list="district-list" value={f.district} onChange={change("district")} autoComplete="off" />
+          <datalist id="district-list">
+            {districts.map((d) => <option key={d} value={d} />)}
+          </datalist>
+          
+
+
         </div>
         <div>
           <label htmlFor="village">{t("village")}</label>
