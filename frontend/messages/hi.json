@@ -58,7 +58,9 @@
     "hectare": "हेक्टेयर",
     "low": "कम जोखिम",
     "medium": "मध्यम जोखिम",
-    "high": "ज़्यादा जोखिम"
+    "high": "ज़्यादा जोखिम",
+    "readAloud": "सुनें",
+    "speak": "{name}। निवेश {inv} रुपये। आय {rev} रुपये। मुनाफ़ा {profit} रुपये।"
   },
   "about": {
     "title": "हमारे बारे में",
@@ -80,8 +82,6 @@
     "cotton": "कपास",
     "wheat": "गेहूं",
     "mustard": "सरसों",
-    "chickpea_gram": "चना",
-    "readAloud": "सुनें",
-    "speak": "{name}। निवेश {inv} रुपये। आय {rev} रुपये। मुनाफ़ा {profit} रुपये।"
+    "chickpea_gram": "चना"
   }
 }
